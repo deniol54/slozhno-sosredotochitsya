@@ -5,5 +5,11 @@
 /* Файл variables.css */
 :root {
   --accent-color: #ff0070;
+  --nav-color: rgb(255, 0, 112);
+  --accent-text-color: rgb(0, 0, 40);
   --padding: clamp(10px, 100vw / 38  , 20px);
+  --main-title-color: rgb(219, 0, 255);
+  --section-title-color: rgb(255, 0, 112);
+  --text-color: rgb(241, 178, 206);
+
 }
