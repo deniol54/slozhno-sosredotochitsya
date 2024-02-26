@@ -5,4 +5,5 @@
 /* Файл variables.css */
 :root {
   --accent-color: #ff0070;
+  --padding: clamp(10px, 100vw / 38  , 20px);
 }
