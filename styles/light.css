@@ -20,11 +20,7 @@
   --background-page-color: rgb(245, 245, 245);
 }
 
-.page.theme_light::before {
-  display: none;
-}
-
-.page.theme_light::after {
+.page.theme_light .header__decoration-item {
   display: none;
 }
 
@@ -42,11 +38,7 @@
     --background-page-color: rgb(245, 245, 245);
   }
 
-  .page.theme_auto::before {
-    display: none;
-  }
-
-  .page.theme_auto::after {
+  .page.theme_auto .header__decoration-item {
     display: none;
   }
 }
