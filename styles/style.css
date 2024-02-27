@@ -289,11 +289,11 @@
 
 @media (width >= 768px) {
   .page {
-    gap: 60px;
+    gap: 80px;
   }
 
   .main {
-    gap: 60px;
+    gap: 80px;
   }
 
   .header-title {
