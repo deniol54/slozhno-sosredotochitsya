@@ -17,4 +17,5 @@
   --text-color: rgb(241, 178, 206);
   --background-image: url(./../images/cover-image-dark.png);
   --hover-button-color: rgba(255, 0, 112, 0.4);
+  --background-page-color: rgb(0, 24, 63);
 }
