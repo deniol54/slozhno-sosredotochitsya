@@ -10,7 +10,7 @@
   text-align: left;
   padding-inline: var(--padding);
   padding-block: var(--padding);
-  background-image: url(./../images/cover-image-dark.png);
+  background-image: var(--background-image);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -18,24 +18,22 @@
   flex-direction: column;
   row-gap: 50px; */
   display: grid;
-  /* grid-template-columns: 1fr; */
-  /* grid-template-rows: auto; */
   gap: 50px;
 }
 
 .page::before {
-  content: 'REC';
+  content: "REC";
   position: absolute;
   color: var(--accent-color);
   font-weight: 400;
   line-height: 25px;
   /* размер надписи плюс расмер уголка  */
-  left: calc(100% - 62px - var(--padding)); 
+  left: calc(100% - 62px - var(--padding));
 }
 
 .page::after {
   position: absolute;
-  content: '';
+  content: "";
   display: inline-block;
   inline-size: 9px;
   block-size: 9px;
@@ -43,7 +41,12 @@
   box-shadow: 0px 0px 4px 2px var(--accent-color);
   background: var(--accent-color);
   margin-block-start: 8px;
-  left: calc(100% - var(--padding) - 18px); 
+  left: calc(100% - var(--padding) - 18px);
+}
+
+.main {
+  display: grid;
+  gap: 50px;
 }
 
 .header {
@@ -57,7 +60,7 @@
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
@@ -69,7 +72,7 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   box-sizing: border-box;
   border-bottom: 1px solid var(--nav-color);
   border-left: 1px solid var(--nav-color);
@@ -116,8 +119,23 @@
   height: 26px;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--hover-button-color);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--nav-color);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--nav-color);
+  pointer-events: none;
 }
 
 .header-title {
@@ -192,6 +210,19 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.text-link:hover {
+  border-bottom: 1px solid var(--text-color);
+  cursor: pointer;
+}
+
+.text-link:focus {
+  outline: none;
+}
+
+.text-link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
 .attention-reasons {
   display: grid;
   grid-template-columns: 1fr;
@@ -258,7 +289,11 @@
 
 @media (width >= 768px) {
   .page {
-    gap: 80px;
+    gap: 60px;
+  }
+
+  .main {
+    gap: 60px;
   }
 
   .header-title {
@@ -280,7 +315,7 @@
   }
 
   .attention-reasons {
-  grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .header-title {

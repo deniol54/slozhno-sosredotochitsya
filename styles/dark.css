@@ -9,10 +9,12 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --accent-color: #ff0070; 
+  --accent-color: #ff0070;
   --nav-color: rgb(255, 0, 112);
   --accent-text-color: rgb(0, 0, 40);
   --main-title-color: rgb(219, 0, 255);
   --section-title-color: rgb(255, 0, 112);
   --text-color: rgb(241, 178, 206);
+  --background-image: url(./../images/cover-image-dark.png);
+  --hover-button-color: rgba(255, 0, 112, 0.4);
 }
